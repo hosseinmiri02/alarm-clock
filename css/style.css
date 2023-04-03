@@ -1,0 +1,80 @@
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+.container,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background-color: #4a98f7;
+}
+
+.container {
+  width: 45rem;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3.2rem;
+  border-radius: 10px;
+}
+
+.time {
+  font-size: 4.4rem;
+  margin: 3rem 0;
+}
+
+.content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.controls {
+  border: 1px solid #999;
+  width: calc(100% / 2 - 5px);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.controls select {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 1.6rem;
+}
+
+.container button {
+  width: 100%;
+  outline: 0;
+  border: none;
+  background-color: #4a98f7;
+  color: #fff;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-size: 2rem;
+}
